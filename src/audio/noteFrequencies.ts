@@ -120,3 +120,4 @@ export const NOTES: NoteItem[] = [
 ];
 
 export type NoteDisplayMode = 'solfege' | 'letters' | 'both' | 'numbers';
+

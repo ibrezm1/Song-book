@@ -134,3 +134,4 @@ export const KeyBar: React.FC<KeyBarProps> = ({
     </div>
   );
 };
+

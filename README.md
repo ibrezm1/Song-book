@@ -67,3 +67,4 @@ This project is configured to deploy directly to GitHub Pages using GitHub Actio
    - Under **Build and deployment** > **Source**, select **GitHub Actions**.
 3. Push to `main` (or run the workflow manually under the **Actions** tab). Your app will be live at:
    `https://<your-username>.github.io/<your-repo-name>/`!
+

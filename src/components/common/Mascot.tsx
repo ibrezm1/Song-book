@@ -55,3 +55,4 @@ export const Mascot: React.FC<MascotProps> = ({
     </div>
   );
 };
+

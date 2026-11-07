@@ -1,0 +1,116 @@
+export interface SongStep {
+  noteId: string; // matches NoteItem id ('c4', 'd4', etc.)
+  noteName: string; // 'Do', 'Re', etc.
+  durationMs: number; // visual tempo hint
+}
+
+export interface Song {
+  id: string;
+  title: string;
+  emoji: string;
+  description: string;
+  notes: SongStep[];
+}
+
+export const SONGS: Song[] = [
+  {
+    id: 'scale-climb',
+    title: 'Do-Re-Mi Scale Ladder',
+    emoji: '🪜',
+    description: 'Climb all the way from Low Do up to High Do!',
+    notes: [
+      { noteId: 'c4', noteName: 'Do', durationMs: 600 },
+      { noteId: 'd4', noteName: 'Re', durationMs: 600 },
+      { noteId: 'e4', noteName: 'Mi', durationMs: 600 },
+      { noteId: 'f4', noteName: 'Fa', durationMs: 600 },
+      { noteId: 'g4', noteName: 'Sol', durationMs: 600 },
+      { noteId: 'a4', noteName: 'La', durationMs: 600 },
+      { noteId: 'b4', noteName: 'Ti', durationMs: 600 },
+      { noteId: 'c5', noteName: 'Do', durationMs: 800 },
+    ],
+  },
+  {
+    id: 'mary-lamb',
+    title: 'Mary Had a Little Lamb',
+    emoji: '🐑',
+    description: 'A sweet nursery tune using just 3 notes!',
+    notes: [
+      { noteId: 'e4', noteName: 'Mi', durationMs: 500 },
+      { noteId: 'd4', noteName: 'Re', durationMs: 500 },
+      { noteId: 'c4', noteName: 'Do', durationMs: 500 },
+      { noteId: 'd4', noteName: 'Re', durationMs: 500 },
+      { noteId: 'e4', noteName: 'Mi', durationMs: 500 },
+      { noteId: 'e4', noteName: 'Mi', durationMs: 500 },
+      { noteId: 'e4', noteName: 'Mi', durationMs: 900 },
+      { noteId: 'd4', noteName: 'Re', durationMs: 500 },
+      { noteId: 'd4', noteName: 'Re', durationMs: 500 },
+      { noteId: 'd4', noteName: 'Re', durationMs: 900 },
+      { noteId: 'e4', noteName: 'Mi', durationMs: 500 },
+      { noteId: 'g4', noteName: 'Sol', durationMs: 500 },
+      { noteId: 'g4', noteName: 'Sol', durationMs: 900 },
+    ],
+  },
+  {
+    id: 'twinkle',
+    title: 'Twinkle Twinkle Little Star',
+    emoji: '⭐',
+    description: 'A classic lullaby across the rainbow xylophone!',
+    notes: [
+      { noteId: 'c4', noteName: 'Do', durationMs: 550 },
+      { noteId: 'c4', noteName: 'Do', durationMs: 550 },
+      { noteId: 'g4', noteName: 'Sol', durationMs: 550 },
+      { noteId: 'g4', noteName: 'Sol', durationMs: 550 },
+      { noteId: 'a4', noteName: 'La', durationMs: 550 },
+      { noteId: 'a4', noteName: 'La', durationMs: 550 },
+      { noteId: 'g4', noteName: 'Sol', durationMs: 1000 },
+      { noteId: 'f4', noteName: 'Fa', durationMs: 550 },
+      { noteId: 'f4', noteName: 'Fa', durationMs: 550 },
+      { noteId: 'e4', noteName: 'Mi', durationMs: 550 },
+      { noteId: 'e4', noteName: 'Mi', durationMs: 550 },
+      { noteId: 'd4', noteName: 'Re', durationMs: 550 },
+      { noteId: 'd4', noteName: 'Re', durationMs: 550 },
+      { noteId: 'c4', noteName: 'Do', durationMs: 1000 },
+    ],
+  },
+  {
+    id: 'row-boat',
+    title: 'Row, Row, Row Your Boat',
+    emoji: '⛵',
+    description: 'Gently down the stream!',
+    notes: [
+      { noteId: 'c4', noteName: 'Do', durationMs: 600 },
+      { noteId: 'c4', noteName: 'Do', durationMs: 600 },
+      { noteId: 'c4', noteName: 'Do', durationMs: 400 },
+      { noteId: 'd4', noteName: 'Re', durationMs: 400 },
+      { noteId: 'e4', noteName: 'Mi', durationMs: 700 },
+      { noteId: 'e4', noteName: 'Mi', durationMs: 400 },
+      { noteId: 'd4', noteName: 'Re', durationMs: 400 },
+      { noteId: 'e4', noteName: 'Mi', durationMs: 400 },
+      { noteId: 'f4', noteName: 'Fa', durationMs: 400 },
+      { noteId: 'g4', noteName: 'Sol', durationMs: 1000 },
+    ],
+  },
+  {
+    id: 'ode-to-joy',
+    title: 'Ode to Joy',
+    emoji: '🌈',
+    description: 'Beethoven\'s famous happy melody!',
+    notes: [
+      { noteId: 'e4', noteName: 'Mi', durationMs: 500 },
+      { noteId: 'e4', noteName: 'Mi', durationMs: 500 },
+      { noteId: 'f4', noteName: 'Fa', durationMs: 500 },
+      { noteId: 'g4', noteName: 'Sol', durationMs: 500 },
+      { noteId: 'g4', noteName: 'Sol', durationMs: 500 },
+      { noteId: 'f4', noteName: 'Fa', durationMs: 500 },
+      { noteId: 'e4', noteName: 'Mi', durationMs: 500 },
+      { noteId: 'd4', noteName: 'Re', durationMs: 500 },
+      { noteId: 'c4', noteName: 'Do', durationMs: 500 },
+      { noteId: 'c4', noteName: 'Do', durationMs: 500 },
+      { noteId: 'd4', noteName: 'Re', durationMs: 500 },
+      { noteId: 'e4', noteName: 'Mi', durationMs: 500 },
+      { noteId: 'e4', noteName: 'Mi', durationMs: 700 },
+      { noteId: 'd4', noteName: 'Re', durationMs: 300 },
+      { noteId: 'd4', noteName: 'Re', durationMs: 900 },
+    ],
+  },
+];
